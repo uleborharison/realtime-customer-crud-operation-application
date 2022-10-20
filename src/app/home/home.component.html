@@ -1,1 +1,15 @@
-<p>home works!</p>
+<h2>{{headername}}</h2>
+<h2>My Salary is: {{salary | currency}}</h2>
+<h2>My Salary Rate is: {{rate | percent}}</h2>
+<!-- <br> -->
+
+<!-- Event binding () -->
+<button (click)="clickFunction('You Clicked Me Now')">Click Me</button>
+<br>
+
+<input #txt type="text" name="" id="" (change)="clickFunction(txt.value)">
+<br>
+<!-- Property binding [] -->
+<input [disabled]="isDisable" type="text">
+<br><br>
+<input [(ngModel)]="headername " type="text">

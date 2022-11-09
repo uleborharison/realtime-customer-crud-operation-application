@@ -1,3 +1,4 @@
+import { MatSelectModule } from '@angular/material/select';
 import { NgModule } from "@angular/core";
 import { MatCardModule } from "@angular/material/card";
 import { MatFormFieldModule } from "@angular/material/form-field";
@@ -13,6 +14,7 @@ NgModule({
         MatInputModule,
         MatTableModule,
         MatButtonModule,
+        MatSelectModule
     ]
 })
 export class MaterialModule {

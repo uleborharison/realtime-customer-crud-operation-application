@@ -14,6 +14,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 //import { AccessRoutingModule } from './access/access-routing.module';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { HttpClientModule } from "@angular/common/http";
+import {MatSelectModule} from '@angular/material/select';
+
 
 @NgModule({
   declarations: [
@@ -33,13 +36,12 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     //AccessRoutingModule
     MatInputModule,
     MatFormFieldModule,
-
-
-
-
-
+    HttpClientModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+}

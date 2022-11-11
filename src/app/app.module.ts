@@ -14,9 +14,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 //import { AccessRoutingModule } from './access/access-routing.module';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { HttpClientModule } from "@angular/common/http";
-import {MatSelectModule} from '@angular/material/select';
+import { HttpClientModule } from '@angular/common/http';
+import { MatSelectModule } from '@angular/material/select';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -37,11 +39,11 @@ import {MatSelectModule} from '@angular/material/select';
     MatInputModule,
     MatFormFieldModule,
     HttpClientModule,
-    MatSelectModule
+    MatSelectModule,
+    CommonModule,
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule {
-
-}
+export class AppModule {}
